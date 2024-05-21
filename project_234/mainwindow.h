@@ -10,7 +10,6 @@
 #include <QGroupBox>
 #include <QSplitter>
 #include "mymodel.h"
-#include "norm.h"
 
 namespace Ui {
 class MainWindow;

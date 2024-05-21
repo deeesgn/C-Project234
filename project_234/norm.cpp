@@ -2,7 +2,6 @@
 #include <QFile>
 #include <QTextStream>
 #include <QDebug>
-#include <limits>
 
 void normalizeCSV(const QString &inputFilePath, const QString &outputFilePath)
 {
@@ -43,6 +42,7 @@ void normalizeCSV(const QString &inputFilePath, const QString &outputFilePath)
             double value = row[i].toDouble(&ok);
             if (ok) {
                 if (value < minValues[i]) minValues[i] = value;
+                if (value > maxValues[i]) maxValues[i] = value;
             }
         }
     }
@@ -58,7 +58,7 @@ void normalizeCSV(const QString &inputFilePath, const QString &outputFilePath)
                 double minValue = minValues[i];
                 double maxValue = maxValues[i];
                 double normalizedValue = (value - minValue) / (maxValue - minValue);
-                normalizedRow.append(QString::number(normalizedValue, 'f', 6)); // Округляем до 6 знаков после запятой
+                normalizedRow.append(QString::number(normalizedValue));
             } else {
                 normalizedRow.append(row[i]);
             }

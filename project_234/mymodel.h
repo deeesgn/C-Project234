@@ -9,7 +9,7 @@ class MyModel : public QAbstractTableModel
 {
     Q_OBJECT
 
-public:
+public:  // Изменить на public
     MyModel(QObject *parent = nullptr);
 
     void setModelData(const QStringList &headers, const QList<QStringList> &rows);

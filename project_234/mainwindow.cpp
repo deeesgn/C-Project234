@@ -125,9 +125,9 @@ void MainWindow::onColumnSelectionChanged()
 void MainWindow::onDisplayTable()
 {
     updateTable();
-    QString outputFilePath = "build/mykit-Debug/qt_data_output.csv";
+    QString outputFilePath = "qt_data_output.csv";
     saveTableToFile(outputFilePath);
-    normalizeCSV(outputFilePath, "build/mykit-Debug/qt_data_norm_output.csv");
+    normalizeCSV(outputFilePath, "qt_data_norm_output.csv");
 }
 
 void MainWindow::updateTable()
