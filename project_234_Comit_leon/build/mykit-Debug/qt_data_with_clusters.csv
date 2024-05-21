@@ -1,0 +1,261 @@
+Item,Cholesterol,Sodium,Sodium (% Daily Value),Clusters
+Egg McMuffin,0.452174,0.208333,0.0205298,1
+Egg White Delight,0.0434783,0.213889,0.0211921,9
+Sausage McMuffin,0.0782609,0.216667,0.0218543,9
+Sausage McMuffin with Egg,0.495652,0.238889,0.0238411,1
+Sausage McMuffin with Egg Whites,0.0869565,0.244444,0.0245033,9
+Steak & Egg McMuffin,0.521739,0.266667,0.0264901,1
+"Bacon,0,0.0230556,0.860927,0
+"Bacon,0,0.0230556,0.933775,0
+"Bacon,0,0.00305556,0.860927,0
+"Bacon,0,0.00305556,0.940397,0
+Sausage Biscuit (Regular Biscuit),0.0521739,0.3,0.0298013,8
+Sausage Biscuit (Large Biscuit),0.0521739,0.330556,0.0331126,8
+Sausage Biscuit with Egg (Regular Biscuit),0.434783,0.325,0.0324503,1
+Sausage Biscuit with Egg (Large Biscuit),0.434783,0.355556,0.0350993,1
+Sausage Biscuit with Egg Whites (Regular Biscuit),0.0608696,0.327778,0.0324503,8
+Sausage Biscuit with Egg Whites (Large Biscuit),0.0608696,0.358333,0.0357616,8
+Southern Style Chicken Biscuit (Regular Biscuit),0.0521739,0.327778,0.0324503,8
+Southern Style Chicken Biscuit (Large Biscuit),0.0521739,0.358333,0.0357616,8
+Steak & Egg Biscuit (Regular Biscuit),0.486957,0.408333,0.0403974,1
+"Bacon,0,0.0233333,0.827815,0
+"Bacon,0,0.00305556,0.827815,0
+Sausage McGriddles,0.0608696,0.286111,0.0284768,8
+"Sausage,0,0.0247222,0.874172,0
+"Sausage,0,0.00472222,0.874172,0
+"Bacon,0.000869565,0.0255556,0.980132,0
+"Bacon,0.000869565,0.00555556,0.980132,0
+"Steak,0.0026087,0.0275,1,0
+Big Breakfast (Regular Biscuit),0.965217,0.433333,0.0430464,1
+Big Breakfast (Large Biscuit),0.965217,0.466667,0.0463576,1
+Big Breakfast with Egg Whites (Regular Biscuit),0.0608696,0.441667,0.0437086,6
+Big Breakfast with Egg Whites (Large Biscuit),0.0608696,0.472222,0.0470199,6
+Big Breakfast with Hotcakes (Regular Biscuit),1,0.597222,0.0596026,1
+Big Breakfast with Hotcakes (Large Biscuit),1,0.627778,0.0622517,1
+Big Breakfast with Hotcakes and Egg Whites (Regular Biscuit),0.0956522,0.602778,0.0602649,6
+Big Breakfast with Hotcakes and Egg Whites (Large Biscuit),0.0956522,0.636111,0.0629139,6
+Hotcakes,0.0347826,0.163889,0.015894,9
+Hotcakes and Sausage,0.0869565,0.258333,0.0258278,9
+Sausage Burrito,0.2,0.219444,0.0218543,9
+Hash Brown,0,0.0861111,0.00860927,4
+Cinnamon Melts,0.026087,0.102778,0.00993377,4
+Fruit & Maple Oatmeal,0.00869565,0.0444444,0.00463576,2
+Fruit & Maple Oatmeal without Brown Sugar,0.00869565,0.0319444,0.00331126,2
+Big Mac,0.147826,0.266667,0.0264901,8
+Quarter Pounder with Cheese,0.165217,0.305556,0.0304636,8
+Quarter Pounder with Bacon & Cheese,0.182609,0.4,0.0397351,6
+Quarter Pounder with Bacon Habanero Ranch,0.182609,0.327778,0.0324503,8
+Quarter Pounder Deluxe,0.147826,0.266667,0.0264901,8
+Double Quarter Pounder with Cheese,0.278261,0.355556,0.0350993,6
+Hamburger,0.0521739,0.133333,0.013245,4
+Cheeseburger,0.0782609,0.188889,0.018543,9
+Double Cheeseburger,0.156522,0.288889,0.0284768,8
+Bacon Clubhouse Burger,0.2,0.408333,0.0403974,6
+McDouble,0.130435,0.233333,0.0231788,9
+Bacon McDouble,0.156522,0.308333,0.0304636,8
+Daily Double,0.13913,0.211111,0.0211921,9
+Jalapeño Double,0.13913,0.286111,0.0284768,8
+McRib,0.121739,0.272222,0.0271523,8
+Premium Crispy Chicken Classic Sandwich,0.0782609,0.275,0.0271523,8
+Premium Grilled Chicken Classic Sandwich,0.113043,0.227778,0.0225166,9
+Premium Crispy Chicken Club Sandwich,0.147826,0.391667,0.0390728,6
+Premium Grilled Chicken Club Sandwich,0.182609,0.347222,0.0344371,8
+Premium Crispy Chicken Ranch BLT Sandwich,0.121739,0.388889,0.0384106,6
+Premium Grilled Chicken Ranch BLT Sandwich,0.156522,0.341667,0.0337748,8
+Bacon Clubhouse Crispy Chicken Sandwich,0.156522,0.477778,0.0476821,6
+Bacon Clubhouse Grilled Chicken Sandwich,0.191304,0.433333,0.0430464,6
+Southern Style Crispy Chicken Sandwich,0.0782609,0.252778,0.0251656,9
+McChicken,0.0608696,0.222222,0.0218543,9
+Bacon Cheddar McChicken,0.113043,0.35,0.0350993,8
+Bacon Buffalo Ranch McChicken,0.0869565,0.35,0.0350993,8
+Buffalo Ranch McChicken,0.0608696,0.275,0.0271523,8
+Premium McWrap Chicken & Bacon (Crispy Chicken),0.13913,0.427778,0.0423841,6
+Premium McWrap Chicken & Bacon (Grilled Chicken),0.165217,0.380556,0.0377483,6
+Premium McWrap Chicken & Ranch (Crispy Chicken),0.113043,0.372222,0.0370861,8
+Premium McWrap Chicken & Ranch (Grilled Chicken),0.13913,0.325,0.0324503,8
+Premium McWrap Southwest Chicken (Crispy Chicken),0.104348,0.411111,0.0410596,6
+Premium McWrap Southwest Chicken (Grilled Chicken),0.13913,0.366667,0.0364238,8
+Premium McWrap Chicken Sweet Chili (Crispy Chicken),0.0869565,0.35,0.0344371,8
+Premium McWrap Chicken Sweet Chili (Grilled Chicken),0.113043,0.302778,0.0298013,8
+Chicken McNuggets (4 piece),0.0434783,0.1,0.00993377,4
+Chicken McNuggets (6 piece),0.0695652,0.15,0.0145695,9
+Chicken McNuggets (10 piece),0.113043,0.25,0.0245033,9
+Chicken McNuggets (20 piece),0.234783,0.5,0.0496689,6
+Chicken McNuggets (40 piece),0.46087,1,0.0993377,1
+Filet-O-Fish,0.0695652,0.163889,0.015894,9
+Premium Bacon Ranch Salad (without Chicken),0.0434783,0.0833333,0.00860927,4
+Premium Bacon Ranch Salad with Crispy Chicken,0.121739,0.238889,0.0238411,9
+Premium Bacon Ranch Salad with Grilled Chicken,0.147826,0.191667,0.0192053,9
+Premium Southwest Salad (without Chicken),0.0173913,0.0416667,0.00397351,2
+Premium Southwest Salad with Crispy Chicken,0.0869565,0.236111,0.0231788,9
+Premium Southwest Salad with Grilled Chicken,0.121739,0.188889,0.018543,9
+Chipotle BBQ Snack Wrap (Crispy Chicken),0.0521739,0.216667,0.0218543,9
+Chipotle BBQ Snack Wrap (Grilled Chicken),0.0695652,0.194444,0.0192053,9
+Honey Mustard Snack Wrap (Crispy Chicken),0.0608696,0.202778,0.0198675,9
+Honey Mustard Snack Wrap (Grilled Chicken),0.0782609,0.180556,0.0178808,9
+Ranch Snack Wrap (Crispy Chicken),0.0695652,0.225,0.0225166,9
+Ranch Snack Wrap (Grilled Chicken),0.0782609,0.2,0.0198675,9
+Small French Fries,0,0.0361111,0.00331126,2
+Medium French Fries,0,0.0527778,0.00529801,2
+Large French Fries,0,0.0805556,0.00794702,4
+Kids French Fries,0,0.0180556,0.00198675,5
+Side Salad,0,0.00277778,0,5
+Apple Slices,0,0,0,5
+Fruit 'n Yogurt Parfait,0.00869565,0.0194444,0.00198675,5
+Baked Apple Pie,0,0.0472222,0.00463576,2
+Chocolate Chip Cookie,0.0173913,0.025,0.00264901,2
+Oatmeal Raisin Cookie,0.0173913,0.0375,0.00397351,2
+Kids Ice Cream Cone,0.00869565,0.00555556,0.000662252,5
+Hot Fudge Sundae,0.0434783,0.0472222,0.00463576,3
+Hot Caramel Sundae,0.0521739,0.0416667,0.00397351,3
+Strawberry Sundae,0.0434783,0.0236111,0.00264901,3
+Coca-Cola Classic (Small),0,0,0,5
+Coca-Cola Classic (Medium),0,0.00138889,0,5
+Coca-Cola Classic (Large),0,0.00138889,0,5
+Coca-Cola Classic (Child),0,0,0,5
+Diet Coke (Small),0,0.00277778,0,5
+Diet Coke (Medium),0,0.00555556,0.000662252,5
+Diet Coke (Large),0,0.00972222,0.000662252,5
+Diet Coke (Child),0,0.00416667,0.000662252,5
+Dr Pepper (Small),0,0.0125,0.0013245,5
+Dr Pepper (Medium),0,0.0180556,0.00198675,5
+Dr Pepper (Large),0,0.025,0.00264901,5
+Dr Pepper (Child),0,0.00833333,0.000662252,5
+Diet Dr Pepper (Small),0,0.0194444,0.00198675,5
+Diet Dr Pepper (Medium),0,0.0277778,0.00264901,2
+Diet Dr Pepper (Large),0,0.0388889,0.00397351,2
+Diet Dr Pepper (Child),0,0.0138889,0.0013245,5
+Sprite (Small),0,0.00833333,0.000662252,5
+Sprite (Medium),0,0.0125,0.0013245,5
+Sprite (Large),0,0.0166667,0.00198675,5
+Sprite (Child),0,0.00694444,0.000662252,5
+1% Low Fat Milk Jug,0.0173913,0.0347222,0.00331126,2
+Fat Free Chocolate Milk Jug,0.00869565,0.0375,0.00397351,2
+Minute Maid 100% Apple Juice Box,0,0.00416667,0.000662252,5
+Minute Maid Orange Juice (Small),0,0,0,5
+Minute Maid Orange Juice (Medium),0,0,0,5
+Minute Maid Orange Juice (Large),0,0.00138889,0,5
+Dasani Water Bottle,0,0,0,5
+Iced Tea (Small),0,0.00277778,0,5
+Iced Tea (Medium),0,0.00277778,0,5
+Iced Tea (Large),0,0.00416667,0.000662252,5
+Iced Tea (Child),0,0.00138889,0,5
+Sweet Tea (Small),0,0.00277778,0,5
+Sweet Tea (Medium),0,0.00277778,0,5
+Sweet Tea (Large),0,0.00277778,0.000662252,5
+Sweet Tea (Child),0,0.00138889,0,5
+Coffee (Small),0,0,0,5
+Coffee (Medium),0,0,0,5
+Coffee (Large),0,0,0,5
+Latte (Small),0.0434783,0.0319444,0.00331126,3
+Latte (Medium),0.0521739,0.0388889,0.00397351,3
+Latte (Large),0.0695652,0.05,0.00529801,10
+Caramel Latte (Small),0.0434783,0.0319444,0.00331126,3
+Caramel Latte (Medium),0.0521739,0.0388889,0.00397351,3
+Caramel Latte (Large),0.0695652,0.05,0.00529801,10
+Hazelnut Latte (Small),0.0434783,0.0319444,0.00331126,3
+Hazelnut Latte (Medium),0.0521739,0.0388889,0.00397351,3
+Hazelnut Latte (Large),0.0695652,0.05,0.00529801,10
+French Vanilla Latte (Small),0.0434783,0.0319444,0.00331126,3
+French Vanilla Latte (Medium),0.0521739,0.0388889,0.00397351,3
+French Vanilla Latte (Large),0.0695652,0.0527778,0.00529801,10
+Latte with Sugar Free French Vanilla Syrup (Small),0.0434783,0.0416667,0.00397351,3
+Latte with Sugar Free French Vanilla Syrup (Medium),0.0521739,0.0527778,0.00529801,3
+Latte with Sugar Free French Vanilla Syrup (Large),0.0695652,0.0666667,0.00662252,10
+Nonfat Latte (Small),0.00869565,0.0305556,0.00331126,2
+Nonfat Latte (Medium),0.00869565,0.0375,0.00397351,2
+Nonfat Latte (Large),0.0173913,0.05,0.00463576,2
+Nonfat Caramel Latte (Small),0.00869565,0.0305556,0.00331126,2
+Nonfat Caramel Latte (Medium),0.00869565,0.0375,0.00397351,2
+Nonfat Caramel Latte (Large),0.0173913,0.05,0.00463576,2
+Nonfat Hazelnut Latte (Small),0.00869565,0.0305556,0.00331126,2
+Nonfat Hazelnut Latte (Medium),0.00869565,0.0375,0.00397351,2
+Nonfat Hazelnut Latte (Large),0.0173913,0.05,0.00463576,2
+Nonfat French Vanilla Latte (Small),0.00869565,0.0319444,0.00331126,2
+Nonfat French Vanilla Latte (Medium),0.00869565,0.0388889,0.00397351,2
+Nonfat French Vanilla Latte (Large),0.0173913,0.05,0.00529801,2
+Nonfat Latte with Sugar Free French Vanilla Syrup (Small),0.00869565,0.0416667,0.00397351,2
+Nonfat Latte with Sugar Free French Vanilla Syrup (Medium),0.00869565,0.05,0.00529801,2
+Nonfat Latte with Sugar Free French Vanilla Syrup (Large),0.0173913,0.0666667,0.00662252,4
+Mocha (Small),0.0608696,0.0416667,0.00397351,3
+Mocha (Medium),0.0695652,0.0527778,0.00529801,10
+Mocha (Large),0.0869565,0.0666667,0.00662252,10
+Mocha with Nonfat Milk (Small),0.026087,0.0416667,0.00397351,2
+Mocha with Nonfat Milk (Medium),0.026087,0.0527778,0.00529801,2
+Mocha with Nonfat Milk (Large),0.0347826,0.0666667,0.00662252,4
+Caramel Mocha (Small),0.0608696,0.0472222,0.00463576,3
+Caramel Mocha (Medium),0.0695652,0.0611111,0.00596026,10
+Caramel Mocha (Large),0.0869565,0.075,0.00728477,10
+Nonfat Caramel Mocha (Small),0.026087,0.0472222,0.00463576,2
+Nonfat Caramel Mocha (Medium),0.026087,0.0583333,0.00596026,4
+Nonfat Caramel Mocha (Large),0.0347826,0.075,0.00728477,4
+Hot Chocolate (Small),0.0695652,0.05,0.00529801,10
+Hot Chocolate (Medium),0.0869565,0.0611111,0.00596026,10
+Hot Chocolate (Large),0.104348,0.0777778,0.00794702,10
+Hot Chocolate with Nonfat Milk (Small),0.026087,0.05,0.00463576,2
+Hot Chocolate with Nonfat Milk (Medium),0.026087,0.0611111,0.00596026,4
+Hot Chocolate with Nonfat Milk (Large),0.0347826,0.0777778,0.00794702,4
+Regular Iced Coffee (Small),0.026087,0.00972222,0.000662252,5
+Regular Iced Coffee (Medium),0.0434783,0.0138889,0.0013245,3
+Regular Iced Coffee (Large),0.0608696,0.0208333,0.00198675,3
+Caramel Iced Coffee (Small),0.026087,0.00972222,0.0013245,5
+Caramel Iced Coffee (Medium),0.0434783,0.0138889,0.0013245,3
+Caramel Iced Coffee (Large),0.0608696,0.0180556,0.00198675,3
+Hazelnut Iced Coffee (Small),0.026087,0.00972222,0.000662252,5
+Hazelnut Iced Coffee (Medium),0.0434783,0.0138889,0.0013245,3
+Hazelnut Iced Coffee (Large),0.0608696,0.0208333,0.00198675,3
+French Vanilla Iced Coffee (Small),0.026087,0.0111111,0.0013245,5
+French Vanilla Iced Coffee (Medium),0.0434783,0.0152778,0.0013245,3
+French Vanilla Iced Coffee (Large),0.0608696,0.0222222,0.00198675,3
+Iced Coffee with Sugar Free French Vanilla Syrup (Small),0.026087,0.0180556,0.00198675,5
+Iced Coffee with Sugar Free French Vanilla Syrup (Medium),0.0434783,0.025,0.00264901,3
+Iced Coffee with Sugar Free French Vanilla Syrup (Large),0.0608696,0.0375,0.00397351,3
+Iced Mocha (Small),0.0608696,0.0347222,0.00331126,3
+Iced Mocha (Medium),0.0695652,0.0416667,0.00397351,3
+Iced Mocha (Large),0.0869565,0.0611111,0.00596026,10
+Iced Mocha with Nonfat Milk (Small),0.0347826,0.0347222,0.00331126,3
+Iced Mocha with Nonfat Milk (Medium),0.0347826,0.0416667,0.00397351,3
+Iced Mocha with Nonfat Milk (Large),0.0434783,0.0611111,0.00596026,4
+Iced Caramel Mocha (Small),0.0608696,0.0388889,0.00397351,3
+Iced Caramel Mocha (Medium),0.0695652,0.0472222,0.00463576,10
+Iced Caramel Mocha (Large),0.0869565,0.0694444,0.00662252,10
+Iced Nonfat Caramel Mocha (Small),0.0347826,0.0388889,0.00397351,3
+Iced Nonfat Caramel Mocha (Medium),0.0347826,0.0472222,0.00463576,3
+Iced Nonfat Caramel Mocha (Large),0.0434783,0.0694444,0.00662252,4
+Frappé Mocha (Small),0.113043,0.0347222,0.00331126,7
+Frappé Mocha (Medium),0.130435,0.0444444,0.00463576,7
+Frappé Mocha (Large),0.156522,0.0527778,0.00529801,7
+Frappé Caramel (Small),0.113043,0.0347222,0.00331126,7
+Frappé Caramel (Medium),0.13913,0.0444444,0.00463576,7
+Frappé Caramel (Large),0.165217,0.0527778,0.00529801,7
+Frappé Chocolate Chip (Small),0.113043,0.0375,0.00397351,7
+Frappé Chocolate Chip (Medium),0.13913,0.0444444,0.00463576,7
+Frappé Chocolate Chip (Large),0.165217,0.0555556,0.00529801,7
+Blueberry Pomegranate Smoothie (Small),0.00869565,0.0111111,0.0013245,5
+Blueberry Pomegranate Smoothie (Medium),0.00869565,0.0138889,0.0013245,5
+Blueberry Pomegranate Smoothie (Large),0.00869565,0.0180556,0.00198675,5
+Strawberry Banana Smoothie (Small),0.00869565,0.0138889,0.0013245,5
+Strawberry Banana Smoothie (Medium),0.00869565,0.0166667,0.0013245,5
+Strawberry Banana Smoothie (Large),0.00869565,0.0222222,0.00198675,5
+Mango Pineapple Smoothie (Small),0.00869565,0.0111111,0.0013245,5
+Mango Pineapple Smoothie (Medium),0.00869565,0.0125,0.0013245,5
+Mango Pineapple Smoothie (Large),0.00869565,0.0166667,0.00198675,5
+Vanilla Shake (Small),0.104348,0.0444444,0.00463576,10
+Vanilla Shake (Medium),0.130435,0.0555556,0.00596026,7
+Vanilla Shake (Large),0.156522,0.0722222,0.00728477,7
+Strawberry Shake (Small),0.104348,0.0444444,0.00463576,10
+Strawberry Shake (Medium),0.130435,0.0583333,0.00596026,7
+Strawberry Shake (Large),0.156522,0.0722222,0.00728477,7
+Chocolate Shake (Small),0.104348,0.0666667,0.00662252,10
+Chocolate Shake (Medium),0.130435,0.0833333,0.00860927,7
+Chocolate Shake (Large),0.147826,0.105556,0.010596,7
+Shamrock Shake (Medium),0.130435,0.0583333,0.00596026,7
+Shamrock Shake (Large),0.156522,0.0722222,0.00728477,7
+McFlurry with M&M’s Candies (Small),0.0869565,0.05,0.00463576,10
+McFlurry with M&M’s Candies (Medium),0.130435,0.0722222,0.00728477,7
+McFlurry with M&M’s Candies (Snack),0.0608696,0.0333333,0.00331126,3
+McFlurry with Oreo Cookies (Small),0.0782609,0.0777778,0.00794702,10
+McFlurry with Oreo Cookies (Medium),0.0956522,0.105556,0.010596,10
+McFlurry with Oreo Cookies (Snack),0.0521739,0.0527778,0.00529801,3
+McFlurry with Reese's Peanut Butter Cups (Medium),0.104348,0.111111,0.0112583,10
+McFlurry with Reese's Peanut Butter Cups (Snack),0.0521739,0.0555556,0.00529801,3
