@@ -22,6 +22,9 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    static QList<QStringList> CartDS;
+    static QStringList headders;
+
 
 private slots:
     void loadCSV(const QString &filePath);
@@ -32,6 +35,8 @@ private slots:
     void on_lineEdit_textChanged(const QString &arg1);
 
     void on_pushButtonDisplayTable_clicked();
+
+    void on_pushButtonCart_clicked();
 
 private:
     Ui::MainWindow *ui;
@@ -44,6 +49,8 @@ private:
 
     void setupHeaderCheckboxes();
     void updateTable();
+    void ContextMenu(const QPoint& pos);
+    void addToCart();
 };
 
 #endif // MAINWINDOW_H

@@ -11,17 +11,20 @@ TARGET = project_234
 TEMPLATE = app
 
 SOURCES += \
+    cart.cpp \
     main.cpp \
     mainwindow.cpp \
     mymodel.cpp \
     norm.cpp
 
 HEADERS += \
+    cart.h \
     mainwindow.h \
     mymodel.h \
     norm.h \
 
 FORMS += \
+    cart.ui \
     mainwindow.ui
 
 # Default rules for deployment.

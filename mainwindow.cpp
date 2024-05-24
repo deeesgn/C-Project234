@@ -13,6 +13,13 @@
 #include <QSplitter>
 #include <QLineEdit>
 #include <QChar>
+#include <QMenu>
+#include <QStandardItemModel>
+#include "cart.h"
+
+
+QList<QStringList> MainWindow::CartDS;
+QStringList MainWindow::headders;
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -31,6 +38,10 @@ MainWindow::MainWindow(QWidget *parent) :
     }
 
     connect(ui->lineEditSearch, &QLineEdit::textChanged, this, &MainWindow::on_lineEdit_textChanged);
+
+    // connect a context menu request with a function ContextMenu
+    connect(ui->tableView, &QTableView::customContextMenuRequested, this, &MainWindow::ContextMenu);
+    ui->tableView->setContextMenuPolicy(Qt::CustomContextMenu);
 }
 
 MainWindow::~MainWindow()
@@ -91,7 +102,7 @@ void MainWindow::loadCSV(const QString &filePath)
     }
 
     file.close();
-
+    MainWindow::headders = headers;
     model->setModelData(headers, data);
 }
 
@@ -114,7 +125,6 @@ void MainWindow::onColumnSelectionChanged()
 {
     // Можно обновлять визуализацию или выполнять другие действия при изменении выбора колонок.
 }
-
 
 void MainWindow::updateTable()
 {
@@ -172,7 +182,6 @@ void MainWindow::saveTableToFile(const QString &filePath)
     file.close();
 }
 
-
 void MainWindow::on_lineEdit_textChanged(const QString &text)
 {
     // get model from tableView
@@ -196,12 +205,56 @@ void MainWindow::on_lineEdit_textChanged(const QString &text)
     }
 }
 
-
 void MainWindow::on_pushButtonDisplayTable_clicked()
 {
     updateTable();
     QString outputFilePath = "qt_data_output.csv";
     saveTableToFile(outputFilePath);
     normalizeCSV(outputFilePath, "qt_data_norm_output.csv");
+}
+
+void MainWindow::ContextMenu(const QPoint& pos)
+{
+    QModelIndex index = ui->tableView->indexAt(pos); //take index from QPoint
+
+    if (index.isValid())
+    {
+        QMenu contextMenu(this); //Create menu
+        QString brand = index.data().toString(); //Take value of cell
+        QAction* addToCart = new QAction("Add to cart", this); //Create new action
+        contextMenu.addAction(addToCart); //Add action to the menu
+
+
+        connect(addToCart, &QAction::triggered, this, &MainWindow::addToCart); //connect a click on "Add to Cart" with adding row to the cart
+
+        contextMenu.exec(ui->tableView->viewport()->mapToGlobal(pos)); //show menu
+    }
+}
+
+void MainWindow::addToCart()
+{
+    QModelIndex index = ui->tableView->currentIndex();
+    int RowID = index.row();
+
+    QStringList row;
+    QAbstractItemModel *model = ui->tableView->model();
+    for (int c = 0; c < model->columnCount(); ++c)
+    {
+        QModelIndex ind = model->index(RowID, c);
+        QVariant cell = model->data(ind);
+        row.append(cell.toString());
+    }
+
+    MainWindow::CartDS.append(row);
+}
+
+
+
+
+
+void MainWindow::on_pushButtonCart_clicked()
+{
+    Cart *cart = new Cart(this);
+    cart->show();
 }
 
