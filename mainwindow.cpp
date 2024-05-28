@@ -190,3 +190,21 @@ void MainWindow::saveTableToFile(const QString &filePath)
 
     file.close();
 }
+
+
+
+/*
+void MainWindow::on_pushButtonClusterize_clicked() // добавляешь кнопку на форму. 
+{
+    //updateTable();
+    //QAbstractItemModel* model = ui->tableView->model();
+
+    // 1) из model->data сформировать vector<vector<double> > dataClust для кластеризации.
+    // БЕРЁМ только числа - isDouble() - написать?
+    // 2) run_kmeans(dataClust, );  // include "kmeans.h"
+    // кластеризация распределяет точки по кластерам
+    // хорошо бы просто отсортировать model->data по номеру кластера, вставляя пустые строчки между кластерами
+    // обновить модель.
+}
+*/
+
