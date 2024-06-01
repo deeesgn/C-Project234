@@ -140,6 +140,9 @@ void MainWindow::setupHeaderCheckboxes()
     ui->groupBoxFilters->setLayout(layout);
 }
 
+void MainWindow::onColumnSelectionChanged()
+{}
+
 void MainWindow::updateTable()
 {
     QList<int> selectedColumns;
