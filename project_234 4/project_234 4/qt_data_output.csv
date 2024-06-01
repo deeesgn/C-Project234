@@ -1,0 +1,261 @@
+Item,Dietary Fiber,Sugars
+Egg McMuffin,4,3
+Egg White Delight,4,3
+Sausage McMuffin,4,2
+Sausage McMuffin with Egg,4,2
+Sausage McMuffin with Egg Whites,4,2
+Steak & Egg McMuffin,4,3
+Bacon, Egg & Cheese Biscuit (Regular Biscuit),2,3
+Bacon, Egg & Cheese Biscuit (Large Biscuit),3,4
+Bacon, Egg & Cheese Biscuit with Egg Whites (Regular Biscuit),2,3
+Bacon, Egg & Cheese Biscuit with Egg Whites (Large Biscuit),3,4
+Sausage Biscuit (Regular Biscuit),2,2
+Sausage Biscuit (Large Biscuit),3,3
+Sausage Biscuit with Egg (Regular Biscuit),2,2
+Sausage Biscuit with Egg (Large Biscuit),3,3
+Sausage Biscuit with Egg Whites (Regular Biscuit),2,3
+Sausage Biscuit with Egg Whites (Large Biscuit),3,3
+Southern Style Chicken Biscuit (Regular Biscuit),2,3
+Southern Style Chicken Biscuit (Large Biscuit),3,4
+Steak & Egg Biscuit (Regular Biscuit),2,3
+Bacon, Egg & Cheese McGriddles,2,15
+Bacon, Egg & Cheese McGriddles with Egg Whites,2,16
+Sausage McGriddles,2,15
+Sausage, Egg & Cheese McGriddles,2,15
+Sausage, Egg & Cheese McGriddles with Egg Whites,2,15
+Bacon, Egg & Cheese Bagel,3,7
+Bacon, Egg & Cheese Bagel with Egg Whites,3,8
+Steak, Egg & Cheese Bagel,3,7
+Big Breakfast (Regular Biscuit),3,3
+Big Breakfast (Large Biscuit),4,3
+Big Breakfast with Egg Whites (Regular Biscuit),3,3
+Big Breakfast with Egg Whites (Large Biscuit),4,4
+Big Breakfast with Hotcakes (Regular Biscuit),6,17
+Big Breakfast with Hotcakes (Large Biscuit),7,17
+Big Breakfast with Hotcakes and Egg Whites (Regular Biscuit),6,17
+Big Breakfast with Hotcakes and Egg Whites (Large Biscuit),7,18
+Hotcakes,3,14
+Hotcakes and Sausage,3,14
+Sausage Burrito,1,2
+Hash Brown,2,0
+Cinnamon Melts,3,32
+Fruit & Maple Oatmeal,5,32
+Fruit & Maple Oatmeal without Brown Sugar,5,18
+Big Mac,3,9
+Quarter Pounder with Cheese,3,10
+Quarter Pounder with Bacon & Cheese,3,12
+Quarter Pounder with Bacon Habanero Ranch,3,10
+Quarter Pounder Deluxe,3,9
+Double Quarter Pounder with Cheese,3,10
+Hamburger,1,6
+Cheeseburger,2,7
+Double Cheeseburger,2,7
+Bacon Clubhouse Burger,4,14
+McDouble,2,7
+Bacon McDouble,2,7
+Daily Double,2,7
+Jalapeño Double,2,6
+McRib,3,11
+Premium Crispy Chicken Classic Sandwich,3,10
+Premium Grilled Chicken Classic Sandwich,3,8
+Premium Crispy Chicken Club Sandwich,3,11
+Premium Grilled Chicken Club Sandwich,3,9
+Premium Crispy Chicken Ranch BLT Sandwich,3,11
+Premium Grilled Chicken Ranch BLT Sandwich,3,9
+Bacon Clubhouse Crispy Chicken Sandwich,4,16
+Bacon Clubhouse Grilled Chicken Sandwich,4,14
+Southern Style Crispy Chicken Sandwich,2,7
+McChicken,2,5
+Bacon Cheddar McChicken,2,6
+Bacon Buffalo Ranch McChicken,2,6
+Buffalo Ranch McChicken,2,5
+Premium McWrap Chicken & Bacon (Crispy Chicken),3,7
+Premium McWrap Chicken & Bacon (Grilled Chicken),3,6
+Premium McWrap Chicken & Ranch (Crispy Chicken),3,8
+Premium McWrap Chicken & Ranch (Grilled Chicken),3,6
+Premium McWrap Southwest Chicken (Crispy Chicken),5,12
+Premium McWrap Southwest Chicken (Grilled Chicken),5,10
+Premium McWrap Chicken Sweet Chili (Crispy Chicken),3,14
+Premium McWrap Chicken Sweet Chili (Grilled Chicken),3,12
+Chicken McNuggets (4 piece),1,0
+Chicken McNuggets (6 piece),1,0
+Chicken McNuggets (10 piece),2,0
+Chicken McNuggets (20 piece),3,0
+Chicken McNuggets (40 piece),6,1
+Filet-O-Fish,2,5
+Premium Bacon Ranch Salad (without Chicken),3,4
+Premium Bacon Ranch Salad with Crispy Chicken,2,5
+Premium Bacon Ranch Salad with Grilled Chicken,2,4
+Premium Southwest Salad (without Chicken),6,6
+Premium Southwest Salad with Crispy Chicken,7,12
+Premium Southwest Salad with Grilled Chicken,7,10
+Chipotle BBQ Snack Wrap (Crispy Chicken),1,8
+Chipotle BBQ Snack Wrap (Grilled Chicken),1,7
+Honey Mustard Snack Wrap (Crispy Chicken),1,3
+Honey Mustard Snack Wrap (Grilled Chicken),1,2
+Ranch Snack Wrap (Crispy Chicken),1,3
+Ranch Snack Wrap (Grilled Chicken),1,2
+Small French Fries,2,0
+Medium French Fries,4,0
+Large French Fries,5,0
+Kids French Fries,1,0
+Side Salad,1,2
+Apple Slices,0,3
+Fruit 'n Yogurt Parfait,1,23
+Baked Apple Pie,4,13
+Chocolate Chip Cookie,1,15
+Oatmeal Raisin Cookie,1,13
+Kids Ice Cream Cone,0,6
+Hot Fudge Sundae,1,48
+Hot Caramel Sundae,0,43
+Strawberry Sundae,0,45
+Coca-Cola Classic (Small),0,39
+Coca-Cola Classic (Medium),0,55
+Coca-Cola Classic (Large),0,76
+Coca-Cola Classic (Child),0,28
+Diet Coke (Small),0,0
+Diet Coke (Medium),0,0
+Diet Coke (Large),0,0
+Diet Coke (Child),0,0
+Dr Pepper (Small),0,35
+Dr Pepper (Medium),0,51
+Dr Pepper (Large),0,70
+Dr Pepper (Child),0,26
+Diet Dr Pepper (Small),0,0
+Diet Dr Pepper (Medium),0,0
+Diet Dr Pepper (Large),0,0
+Diet Dr Pepper (Child),0,0
+Sprite (Small),0,37
+Sprite (Medium),0,54
+Sprite (Large),0,74
+Sprite (Child),0,27
+1% Low Fat Milk Jug,0,12
+Fat Free Chocolate Milk Jug,1,22
+Minute Maid 100% Apple Juice Box,0,19
+Minute Maid Orange Juice (Small),0,30
+Minute Maid Orange Juice (Medium),0,39
+Minute Maid Orange Juice (Large),0,58
+Dasani Water Bottle,0,0
+Iced Tea (Small),0,0
+Iced Tea (Medium),0,0
+Iced Tea (Large),0,0
+Iced Tea (Child),0,0
+Sweet Tea (Small),0,36
+Sweet Tea (Medium),0,45
+Sweet Tea (Large),0,54
+Sweet Tea (Child),0,27
+Coffee (Small),0,0
+Coffee (Medium),0,0
+Coffee (Large),0,0
+Latte (Small),1,12
+Latte (Medium),1,15
+Latte (Large),1,20
+Caramel Latte (Small),1,38
+Caramel Latte (Medium),1,48
+Caramel Latte (Large),1,59
+Hazelnut Latte (Small),1,38
+Hazelnut Latte (Medium),1,47
+Hazelnut Latte (Large),1,58
+French Vanilla Latte (Small),1,36
+French Vanilla Latte (Medium),1,45
+French Vanilla Latte (Large),1,56
+Latte with Sugar Free French Vanilla Syrup (Small),1,12
+Latte with Sugar Free French Vanilla Syrup (Medium),1,15
+Latte with Sugar Free French Vanilla Syrup (Large),2,20
+Nonfat Latte (Small),1,13
+Nonfat Latte (Medium),1,16
+Nonfat Latte (Large),1,21
+Nonfat Caramel Latte (Small),1,39
+Nonfat Caramel Latte (Medium),1,48
+Nonfat Caramel Latte (Large),1,59
+Nonfat Hazelnut Latte (Small),1,38
+Nonfat Hazelnut Latte (Medium),1,48
+Nonfat Hazelnut Latte (Large),1,59
+Nonfat French Vanilla Latte (Small),1,37
+Nonfat French Vanilla Latte (Medium),1,46
+Nonfat French Vanilla Latte (Large),1,56
+Nonfat Latte with Sugar Free French Vanilla Syrup (Small),1,13
+Nonfat Latte with Sugar Free French Vanilla Syrup (Medium),1,16
+Nonfat Latte with Sugar Free French Vanilla Syrup (Large),2,21
+Mocha (Small),2,42
+Mocha (Medium),2,53
+Mocha (Large),2,63
+Mocha with Nonfat Milk (Small),2,43
+Mocha with Nonfat Milk (Medium),2,53
+Mocha with Nonfat Milk (Large),2,64
+Caramel Mocha (Small),1,40
+Caramel Mocha (Medium),1,50
+Caramel Mocha (Large),1,60
+Nonfat Caramel Mocha (Small),1,41
+Nonfat Caramel Mocha (Medium),1,51
+Nonfat Caramel Mocha (Large),1,61
+Hot Chocolate (Small),1,45
+Hot Chocolate (Medium),1,56
+Hot Chocolate (Large),1,68
+Hot Chocolate with Nonfat Milk (Small),1,46
+Hot Chocolate with Nonfat Milk (Medium),1,57
+Hot Chocolate with Nonfat Milk (Large),1,69
+Regular Iced Coffee (Small),0,22
+Regular Iced Coffee (Medium),0,30
+Regular Iced Coffee (Large),0,45
+Caramel Iced Coffee (Small),0,21
+Caramel Iced Coffee (Medium),0,28
+Caramel Iced Coffee (Large),0,42
+Hazelnut Iced Coffee (Small),0,20
+Hazelnut Iced Coffee (Medium),0,28
+Hazelnut Iced Coffee (Large),0,41
+French Vanilla Iced Coffee (Small),0,19
+French Vanilla Iced Coffee (Medium),0,26
+French Vanilla Iced Coffee (Large),0,39
+Iced Coffee with Sugar Free French Vanilla Syrup (Small),0,1
+Iced Coffee with Sugar Free French Vanilla Syrup (Medium),0,2
+Iced Coffee with Sugar Free French Vanilla Syrup (Large),0,2
+Iced Mocha (Small),1,34
+Iced Mocha (Medium),1,43
+Iced Mocha (Large),2,62
+Iced Mocha with Nonfat Milk (Small),1,35
+Iced Mocha with Nonfat Milk (Medium),1,43
+Iced Mocha with Nonfat Milk (Large),2,62
+Iced Caramel Mocha (Small),0,33
+Iced Caramel Mocha (Medium),1,41
+Iced Caramel Mocha (Large),1,59
+Iced Nonfat Caramel Mocha (Small),0,33
+Iced Nonfat Caramel Mocha (Medium),1,41
+Iced Nonfat Caramel Mocha (Large),1,59
+Frappé Mocha (Small),1,57
+Frappé Mocha (Medium),1,71
+Frappé Mocha (Large),1,88
+Frappé Caramel (Small),0,57
+Frappé Caramel (Medium),0,71
+Frappé Caramel (Large),0,88
+Frappé Chocolate Chip (Small),1,67
+Frappé Chocolate Chip (Medium),1,81
+Frappé Chocolate Chip (Large),1,99
+Blueberry Pomegranate Smoothie (Small),3,44
+Blueberry Pomegranate Smoothie (Medium),4,54
+Blueberry Pomegranate Smoothie (Large),5,70
+Strawberry Banana Smoothie (Small),3,44
+Strawberry Banana Smoothie (Medium),3,54
+Strawberry Banana Smoothie (Large),4,70
+Mango Pineapple Smoothie (Small),1,46
+Mango Pineapple Smoothie (Medium),1,56
+Mango Pineapple Smoothie (Large),2,72
+Vanilla Shake (Small),0,63
+Vanilla Shake (Medium),0,81
+Vanilla Shake (Large),0,101
+Strawberry Shake (Small),0,79
+Strawberry Shake (Medium),0,100
+Strawberry Shake (Large),0,123
+Chocolate Shake (Small),1,77
+Chocolate Shake (Medium),2,97
+Chocolate Shake (Large),2,120
+Shamrock Shake (Medium),0,93
+Shamrock Shake (Large),0,115
+McFlurry with M&M’s Candies (Small),1,89
+McFlurry with M&M’s Candies (Medium),2,128
+McFlurry with M&M’s Candies (Snack),1,59
+McFlurry with Oreo Cookies (Small),1,64
+McFlurry with Oreo Cookies (Medium),1,85
+McFlurry with Oreo Cookies (Snack),1,43
+McFlurry with Reese's Peanut Butter Cups (Medium),2,103
+McFlurry with Reese's Peanut Butter Cups (Snack),1,51
