@@ -37,7 +37,7 @@ private:
     QList<QCheckBox*> checkBoxes;
 
     void loadCSVForTable(const QString &filePath);
-    void loadCSV(const QString &filePath, std::vector<std::vector<double>> &data);
+    void loadCSV(const QString &filePath, std::vector<std::vector<double>> &data, std::vector<QStringList> &originalData); // Изменено
     void setupHeaderCheckboxes();
     void onColumnSelectionChanged();
     void updateTable();

@@ -5,6 +5,6 @@
 #include <QList>
 #include <QStringList>
 
-void normalizeCSV(const QString &inputFilePath, const QString &outputFilePath);
+void normalization(const QString &inputFilePath, const QString &outputFilePath);
 
 #endif // NORM_H

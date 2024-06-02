@@ -13,14 +13,11 @@ void DataOutput::saveSelectedColumns(const QString &filePath, const QStringList 
 
     QTextStream stream(&file);
 
-    // Записываем заголовки столбцов
     stream << headers.join(',') << "\n";
 
-    // Записываем данные таблицы
     for (const QStringList &row : data) {
         stream << row.join(',') << "\n";
     }
-
     file.close();
     qDebug() << "File saved successfully at" << filePath;
 }

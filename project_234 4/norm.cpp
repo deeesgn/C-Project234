@@ -3,7 +3,7 @@
 #include <QTextStream>
 #include <QDebug>
 
-void normalizeCSV(const QString &inputFilePath, const QString &outputFilePath)
+void normalization(const QString &inputFilePath, const QString &outputFilePath)
 {
     QFile inputFile(inputFilePath);
     if (!inputFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
@@ -30,12 +30,10 @@ void normalizeCSV(const QString &inputFilePath, const QString &outputFilePath)
     }
     inputFile.close();
 
-    // Нормализация данных
     int numColumns = headers.size();
     QList<double> minValues(numColumns, std::numeric_limits<double>::max());
     QList<double> maxValues(numColumns, std::numeric_limits<double>::lowest());
 
-    // Поиск минимальных и максимальных значений для каждого столбца
     for (const QStringList &row : data) {
         for (int i = 0; i < numColumns; ++i) {
             bool ok;
@@ -47,7 +45,6 @@ void normalizeCSV(const QString &inputFilePath, const QString &outputFilePath)
         }
     }
 
-    // Применение нормализации
     QList<QStringList> normalizedData;
     for (const QStringList &row : data) {
         QStringList normalizedRow;
@@ -66,7 +63,6 @@ void normalizeCSV(const QString &inputFilePath, const QString &outputFilePath)
         normalizedData.append(normalizedRow);
     }
 
-    // Запись нормализованных данных в новый файл
     QFile outputFile(outputFilePath);
     if (!outputFile.open(QIODevice::WriteOnly | QIODevice::Text)) {
         qWarning() << "Could not open output file" << outputFilePath;

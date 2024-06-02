@@ -13,16 +13,16 @@ public:
     std::vector<std::vector<double>> getCentroids();
 
 private:
+    void initialization(const std::vector<std::vector<double>> &data);
+    int nearest(const std::vector<double> &point);
+    std::vector<double> compute(const std::vector<std::vector<double>> &cluster);
+
     int k;
     int maxIterations;
     std::vector<std::vector<double>> centroids;
-
-    void initializeCentroids(const std::vector<std::vector<double>> &data);
-    int nearestCentroid(const std::vector<double> &point);
-    std::vector<double> computeCentroid(const std::vector<std::vector<double>> &cluster);
 };
 
-void loadCSV(const QString &filename, std::vector<std::vector<double>> &data);
-void saveCSV(const QString &filename, const QStringList &headers, const std::vector<std::vector<double>> &data, const std::vector<int> &clusters);
+void loadCSV(const QString &filename, std::vector<std::vector<double>> &data, std::vector<QStringList> &originalData);
+void saveCSV(const QString &filename, const QStringList &headers, const std::vector<QStringList> &originalData, const std::vector<int> &labels);
 
 #endif // KMEANS_H
