@@ -1,157 +1,118 @@
 #include "kmeans.h"
-#include <iostream>
+#include <QFile>
+#include <QTextStream>
+#include <QVector>
+#include <cmath>
 #include <cstdlib>
 #include <ctime>
+#include <algorithm>
+#include <random>
 
-// Конструктор
-KMeans::KMeans(int k, int max_iterations) : k(k), max_iterations(max_iterations) {}
-
-// Инициализация центроидов случайным образом
-void KMeans::initializeCentroids() {
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_int_distribution<> dis(0, points.size() - 1);
-
-    for (int i = 0; i < k; ++i) {
-        int idx = dis(gen);
-        clusters.emplace_back(points[idx].coordinates);
-    }
+KMeans::KMeans(int k, int maxIterations) : k(k), maxIterations(maxIterations) {
+    std::srand(std::time(nullptr));
 }
 
-// Метод для вычисления расстояния между двумя точками (Евклидово расстояние)
-double KMeans::calculateDistance(const Point& p1, const Point& p2) {
-    double sum = 0.0;
-    for (size_t i = 0; i < p1.coordinates.size(); ++i) {
-        sum += std::pow(p1.coordinates[i] - p2.coordinates[i], 2);
-    }
-    return std::sqrt(sum);
-}
-
-// Назначение точек кластерам
-void KMeans::assignPointsToClusters() {
-    for (auto& point : points) {
-        double min_distance = std::numeric_limits<double>::max();
-        int best_cluster = -1;
-
-        for (size_t i = 0; i < clusters.size(); ++i) {
-            double distance = calculateDistance(point, Point(clusters[i].centroid));
-            if (distance < min_distance) {
-                min_distance = distance;
-                best_cluster = i;
+void KMeans::fit(const std::vector<std::vector<double>> &data) {
+    initialization(data);
+    for (int iter = 0; iter < maxIterations; ++iter) {
+        std::vector<std::vector<std::vector<double>>> clusters(k);
+        for (const auto &point : data) {
+            int centroidIndex = nearest(point);
+            clusters[centroidIndex].push_back(point);
+        }
+        for (int i = 0; i < k; ++i) {
+            if (!clusters[i].empty()) {
+                centroids[i] = compute(clusters[i]);
             }
         }
-
-        point.cluster = best_cluster;
-        clusters[best_cluster].points.push_back(point);
     }
 }
 
-// Обновление центроидов кластеров
-void KMeans::updateCentroids() {
-    for (auto& cluster : clusters) {
-        std::vector<double> new_centroid(cluster.centroid.size(), 0.0);
-
-        for (const auto& point : cluster.points) {
-            for (size_t i = 0; i < point.coordinates.size(); ++i) {
-                new_centroid[i] += point.coordinates[i];
-            }
-        }
-
-        for (size_t i = 0; i < new_centroid.size(); ++i) {
-            new_centroid[i] /= cluster.points.size();
-        }
-
-        cluster.centroid = new_centroid;
-    }
-}
-
-// Очистка кластеров
-void KMeans::clearClusters() {
-    for (auto& cluster : clusters) {
-        cluster.points.clear();
-    }
-}
-
-// Запуск алгоритма k-means
-void KMeans::fit(std::vector<Point>& data) {
-    points = data;
-    initializeCentroids();
-
-    for (int i = 0; i < max_iterations; ++i) {
-        clearClusters();
-        assignPointsToClusters();
-        updateCentroids();
-    }
-}
-
-// Получение результатов
-std::vector<int> KMeans::getLabels() {
+std::vector<int> KMeans::predict(const std::vector<std::vector<double>> &data) {
     std::vector<int> labels;
-    for (const auto& point : points) {
-        labels.push_back(point.cluster);
+    for (const auto &point : data) {
+        labels.push_back(nearest(point));
     }
     return labels;
 }
 
-// Вычисление ошибки кластера (сумма квадратов расстояний от точек до центроида)
-double KMeans::calculateError() {
-    double total_error = 0.0;
-    for (const auto& cluster : clusters) {
-        for (const auto& point : cluster.points) {
-            total_error += std::pow(calculateDistance(point, Point(cluster.centroid)), 2);
-        }
-    }
-    return total_error;
+std::vector<std::vector<double>> KMeans::getCentroids() {
+    return centroids;
 }
 
-// Функция для запуска алгоритма k-means
-std::pair<std::vector<std::vector<double>>, std::vector<int>> run_kmeans(const std::vector<std::vector<double>>& data, int num_clusters, int max_iters) {
-    // Инициализация данных и параметров
-    std::vector<Point> points;
-    for (const auto& d : data) {
-        points.emplace_back(d);
+void KMeans::initialization(const std::vector<std::vector<double>> &data) {
+    centroids.clear();
+    std::vector<int> indices(data.size());
+    std::iota(indices.begin(), indices.end(), 0);
+    std::shuffle(indices.begin(), indices.end(), std::default_random_engine(std::rand()));
+    for (int i = 0; i < k; ++i) {
+        centroids.push_back(data[indices[i]]);
     }
-
-    KMeans kmeans(num_clusters, max_iters);
-    kmeans.fit(points);
-
-    // Получение результатов
-    std::vector<int> labels = kmeans.getLabels();
-    std::vector<std::vector<double>> centroids;
-    for (const auto& cluster : kmeans.getClusters()) {
-        centroids.push_back(cluster.centroid);
-    }
-
-    return {centroids, labels};
 }
 
-// Функция для многократного запуска k-means и выбора лучшего результата
-std::tuple<std::vector<std::vector<double>>, std::vector<int>, double> run_kmeans_multiple(const std::vector<std::vector<double>>& data, int num_clusters, int max_iters, int num_runs) {
-    double best_error = std::numeric_limits<double>::max();
-    std::vector<std::vector<double>> best_centroids;
-    std::vector<int> best_labels;
-
-    for (int run = 0; run < num_runs; ++run) {
-        auto [centroids, labels] = run_kmeans(data, num_clusters, max_iters);
-
-        // Создать новый экземпляр KMeans для оценки ошибки
-        std::vector<Point> points;
-        for (const auto& d : data) {
-            points.emplace_back(d);
+int KMeans::nearest(const std::vector<double> &point) {
+    double minDistance = std::numeric_limits<double>::max();
+    int nearest = 0;
+    for (int i = 0; i < k; ++i) {
+        double distance = 0.0;
+        for (size_t j = 0; j < point.size(); ++j) {
+            distance += std::pow(point[j] - centroids[i][j], 2);
         }
-
-        KMeans kmeans(num_clusters, max_iters);
-        kmeans.fit(points);
-
-        double error = kmeans.calculateError();
-        std::cout << "Run " << run + 1 << " error: " << error << std::endl; // Вывод ошибки после каждого запуска
-
-        if (error < best_error) {
-            best_error = error;
-            best_centroids = centroids;
-            best_labels = labels;
+        if (distance < minDistance) {
+            minDistance = distance;
+            nearest = i;
         }
     }
+    return nearest;
+}
 
-    return {best_centroids, best_labels, best_error};
+std::vector<double> KMeans::compute(const std::vector<std::vector<double>> &cluster) {
+    std::vector<double> centroid(cluster[0].size(), 0.0);
+    for (const auto &point : cluster) {
+        for (size_t i = 0; i < point.size(); ++i) {
+            centroid[i] += point[i];
+        }
+    }
+    for (size_t i = 0; i < centroid.size(); ++i) {
+        centroid[i] /= cluster.size();
+    }
+    return centroid;
+}
+
+void loadCSV(const QString &filename, std::vector<std::vector<double>> &data, std::vector<QStringList> &originalData) {
+    QFile file(filename);
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        return;
+    }
+
+    QTextStream in(&file);
+    data.clear();
+    originalData.clear();
+    while (!in.atEnd()) {
+        QString line = in.readLine();
+        QStringList fields = line.split(',');
+        originalData.push_back(fields);
+        std::vector<double> row;
+        for (const auto &field : fields) {
+            row.push_back(field.toDouble());
+        }
+        data.push_back(row);
+    }
+    file.close();
+}
+
+void saveCSV(const QString &filename, const QStringList &headers, const std::vector<QStringList> &originalData, const std::vector<int> &labels) {
+    QFile file(filename);
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+        return;
+    }
+
+    QTextStream out(&file);
+    out << headers.join(',') << "\n";
+    for (size_t i = 0; i < originalData.size(); ++i) {
+        QStringList line = originalData[i];
+        line << QString::number(labels[i]);
+        out << line.join(',') << "\n";
+    }
+    file.close();
 }

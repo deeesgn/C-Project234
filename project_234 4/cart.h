@@ -2,7 +2,6 @@
 #define CART_H
 
 #include <QDialog>
-#include "mainwindow.h"
 
 namespace Ui {
 class Cart;
@@ -18,7 +17,6 @@ public:
 
 private slots:
     void on_pushButtonClear_clicked();
-
     void on_pushButtonCheck_clicked();
 
 private:

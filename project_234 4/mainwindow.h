@@ -2,18 +2,15 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QTableView>
-#include <QHeaderView>
-#include <QPushButton>
+#include <QList>
+#include <QStringList>
 #include <QCheckBox>
-#include <QVBoxLayout>
-#include <QGroupBox>
-#include <QSplitter>
-#include "mymodel.h"
 
 namespace Ui {
 class MainWindow;
 }
+
+class MyModel;
 
 class MainWindow : public QMainWindow
 {
@@ -22,33 +19,29 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
     static QList<QStringList> CartDS;
     static QStringList headders;
 
-
 private slots:
-    void loadCSV(const QString &filePath);
     void onOpenFile();
-    void onColumnSelectionChanged();
-    void saveTableToFile(const QString &filePath);
-
-    void on_lineEdit_textChanged(const QString &arg1);
-
     void on_pushButtonDisplayTable_clicked();
-
     void on_pushButtonCart_clicked();
+    void on_lineEdit_textChanged(const QString &text);
 
 private:
     Ui::MainWindow *ui;
-    QTableView *tableView;
     MyModel *model;
-    QGroupBox *columnsGroupBox;
     QStringList headers;
-    QList<QCheckBox*> checkBoxes;
     QList<QStringList> data;
+    QList<QCheckBox*> checkBoxes;
 
+    void loadCSVForTable(const QString &filePath);
+    void loadCSV(const QString &filePath, std::vector<std::vector<double>> &data, std::vector<QStringList> &originalData); // Изменено
     void setupHeaderCheckboxes();
+    void onColumnSelectionChanged();
     void updateTable();
+    void saveTableToFile(const QString &filePath);
     void ContextMenu(const QPoint& pos);
     void addToCart();
 };

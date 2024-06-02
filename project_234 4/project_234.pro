@@ -12,6 +12,8 @@ TEMPLATE = app
 
 SOURCES += \
     cart.cpp \
+    data_output.cpp \
+    kmeans.cpp \
     main.cpp \
     mainwindow.cpp \
     mymodel.cpp \
@@ -19,6 +21,8 @@ SOURCES += \
 
 HEADERS += \
     cart.h \
+    data_output.h \
+    kmeans.h \
     mainwindow.h \
     mymodel.h \
     norm.h \
